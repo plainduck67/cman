@@ -1,7 +1,7 @@
-# cman -- c project manager
+# cman -- C project manager
 
-### cman is a project manager for C that is inspired by cargo for rust, it is NOT a package manager, it is only designed to automate compiling and running c
-### it allows you to run, build and make new c projects, it utilizes makefile but adds some more automation
+### cman is a project manager for C that is inspired by cargo for rust, it is NOT a package manager, it is only designed to automate compiling and running C
+### it allows you to run, build and make new C projects, it utilizes makefile but adds some more automation
 
 # Usage:
 
@@ -16,7 +16,7 @@
     cman build
 ```
 
-# suggestions
+# Suggestions:
 
 ```bash
     # make it executable
