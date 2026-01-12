@@ -14,18 +14,20 @@ case "$cmd" in
             exit 1
         fi
 
-        mkdir -p "$project/src"
-        mkdir -p "$project/include"
+        mkdir -p "$PWD/$project/src"
+        mkdir -p "$PWD/$project/include"
         echo "project source and header directories created."
-        cat > "$project/src/main.c" << EOF
-        #include <stdio.h>
+        cat > "$PWD/$project/src/main.c" << EOF
+#include <stdio.h>
 
-        int main() {
-            printf("Hello, World");
-            return 0;
-        }
+int main() {
+    printf("Hello, World");
+    return 0;
+}
+EOF
         echo "main file created"
-cat > "$project/Makefile" << EOF
+
+cat > "$PWD/$project/Makefile" << EOF
 PROJECT = $project
 
 CC = gcc
